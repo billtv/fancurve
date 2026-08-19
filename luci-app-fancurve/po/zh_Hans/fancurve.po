@@ -1,0 +1,101 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "Fan Control"
+msgstr "风扇控制"
+
+msgid "Set a motherboard-style fan curve by dragging control points. Fan duty is interpolated between the points."
+msgstr "像主板 BIOS 那样拖动控制点设置风扇曲线，转速按相邻点之间的直线插值。"
+
+msgid "Settings"
+msgstr "设置"
+
+msgid "Enable"
+msgstr "开启"
+
+msgid "Run the controller with the curve below."
+msgstr "按下方曲线运行风扇控制。"
+
+msgid "Fan Curve"
+msgstr "风扇曲线"
+
+msgid "Hardware"
+msgstr "硬件"
+
+msgid "Temperature / speed curve"
+msgstr "温度 / 转速曲线"
+
+msgid "Thermal File"
+msgstr "温度文件"
+
+msgid "Fan File"
+msgstr "风扇控制"
+
+msgid "Fan Speed File"
+msgstr "风扇速度虚拟文件"
+
+msgid "Max Speed"
+msgstr "最大速度"
+
+msgid "PWM value that corresponds to 100% on the curve."
+msgstr "曲线上 100% 对应的 PWM 值。"
+
+msgid "Temperature divisor"
+msgstr "温度除数"
+
+msgid "Linux thermal sysfs is usually millidegrees, so 1000. Use 1 if the sensor already reports °C."
+msgstr "Linux 温度节点通常是毫摄氏度，填 1000。如果传感器已经是摄氏度，填 1。"
+
+msgid "Add point"
+msgstr "添加控制点"
+
+msgid "Remove point"
+msgstr "删除控制点"
+
+msgid "Restore default"
+msgstr "恢复默认"
+
+msgid "Point %d"
+msgstr "点 %d"
+
+msgid "Current temperature: %s °C"
+msgstr "当前温度：%s °C"
+
+msgid "Curve target: %s%%"
+msgstr "曲线目标：%s%%"
+
+msgid "Target PWM: %s"
+msgstr "目标 PWM：%s"
+
+msgid "Actual PWM: %s"
+msgstr "实际 PWM：%s"
+
+msgid "Drag the points, then click Save & Apply."
+msgstr "拖动控制点，然后点击「保存并应用」。"
+
+msgid "Horizontal axis is temperature, vertical axis is fan duty. Adjacent points are connected with straight lines, same as a motherboard fan curve. Click Save & Apply to write the curve to the controller."
+msgstr "横轴是温度，纵轴是风扇占空比。相邻点之间用直线连接，和主板风扇曲线一样。点击「保存并应用」后才会写给控制器。"
+
+msgid "At most 8 control points can be used."
+msgstr "最多使用 8 个控制点。"
+
+msgid "At least two control points are required."
+msgstr "至少需要两个控制点。"
+
+msgid "Use 2 to 8 points as temperature:percent, for example 40:0,55:25,70:50,85:80,100:100."
+msgstr "使用 2 到 8 个「温度:百分比」点，例如 40:0,55:25,70:50,85:80,100:100。"
+
+msgid "Temperatures must increase by at least 2 °C between points."
+msgstr "相邻点的温度至少要相差 2°C。"
+
+msgid "Fan curve applied."
+msgstr "风扇曲线已应用。"
+
+msgid "Failed to apply fan curve: %s"
+msgstr "应用风扇曲线失败：%s"
+
+msgid "Current speed:"
+msgstr "当前速度："
+
+msgid "Current temperature:"
+msgstr "当前温度："

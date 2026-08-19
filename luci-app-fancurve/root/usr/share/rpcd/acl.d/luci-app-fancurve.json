@@ -1,0 +1,34 @@
+{
+	"luci-app-fancurve": {
+		"description": "Fan Curve",
+		"read": {
+			"uci": [
+				"fancurve"
+			],
+			"file": {
+				"/sys/class/thermal/*/*": [
+					"read"
+				],
+				"/sys/class/hwmon/*/*": [
+					"read"
+				],
+				"/sys/devices/virtual/thermal/*/*": [
+					"read"
+				]
+			}
+		},
+		"write": {
+			"uci": [
+				"fancurve"
+			],
+			"file": {
+				"/sys/class/hwmon/*/pwm*": [
+					"write"
+				],
+				"/etc/init.d/fancurve": [
+					"exec"
+				]
+			}
+		}
+	}
+}

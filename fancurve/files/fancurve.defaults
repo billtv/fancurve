@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# Migrate leftover fancontrol UCI into fancurve once.
+if [ -s /etc/config/fancontrol ] && [ ! -s /etc/config/fancurve ]; then
+	sed 's/^config[[:space:]]\+fancontrol/config fancurve/' \
+		/etc/config/fancontrol > /etc/config/fancurve
+fi
+
+if [ -x /etc/init.d/fancontrol ]; then
+	/etc/init.d/fancontrol stop >/dev/null 2>&1 || true
+	/etc/init.d/fancontrol disable >/dev/null 2>&1 || true
+fi
+
+exit 0

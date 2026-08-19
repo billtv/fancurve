@@ -1,0 +1,13 @@
+{
+	"admin/services/fancurve": {
+		"title": "Fan Curve",
+		"order": 90,
+		"action": {
+			"type": "view",
+			"path": "fancurve"
+		},
+		"depends": {
+			"acl": [ "luci-app-fancurve" ]
+		}
+	}
+}
